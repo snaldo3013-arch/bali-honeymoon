@@ -175,6 +175,52 @@ nav#nav button.active{border-bottom:0;background:#e8f6f0;color:#066e69}
 .place-photo img,.place-photo-placeholder{border-radius:17px}
 input,select,textarea{border-radius:14px}
 @media(max-width:390px){.quick-grid.grouped-home .quick-emoji{width:54px;height:54px}.quick-grid.grouped-home{gap:5px}.quick-grid.grouped-home .quick-link{font-size:11px}}
+
+/* Friendly delivery-app-inspired Bali design v29; original icons and layouts */
+:root{--mint-pop:#2acdb8;--mint-deep:#087e75;--charcoal:#203537;--pale:#e9faf5}
+body{background:#f7f8f8;color:var(--charcoal);font-size:15px}
+header{min-height:255px!important;border-radius:0 0 30px 30px!important}
+header h1{font-weight:900!important;letter-spacing:-1.5px!important;font-size:32px!important}
+header .app-eyebrow{font-weight:900;letter-spacing:.5px!important}
+nav#nav{background:#fff;padding:8px 10px;gap:6px;box-shadow:0 3px 10px #143b3010}
+nav#nav button{border-radius:14px;font-weight:850;font-size:12px;padding:10px 12px}
+nav#nav button.active{background:#d9faf1;color:#075f5a}
+.panel{padding:16px 13px 25px}
+.section-heading{font-size:20px;font-weight:900;letter-spacing:-.85px;margin:20px 3px 13px}
+.home-feature{border-radius:25px;min-height:195px!important;box-shadow:0 5px 15px #0c3c3412}
+.home-feature strong{font-size:25px!important;font-weight:900;letter-spacing:-1px;line-height:1.4}
+.home-feature .btn{border-radius:13px;font-size:13px;font-weight:850}
+.quick-grid.grouped-home{gap:10px;margin-bottom:10px}
+.quick-grid.grouped-home .quick-link{background:#fff;border:1px solid #edf2f0;border-radius:21px;box-shadow:0 4px 13px #143c3610;min-height:117px;padding:11px 2px 9px;font-size:12px;font-weight:900;gap:9px}
+.quick-grid.grouped-home .quick-emoji{border-radius:19px;width:59px;height:59px;background:#dffaf1!important;color:#007e74!important;box-shadow:none}
+.quick-grid.grouped-home .quick-link:nth-child(2) .quick-emoji{background:#e6f0ff!important;color:#4b80c4!important}
+.quick-grid.grouped-home .quick-link:nth-child(3) .quick-emoji{background:#fff1dd!important;color:#c18332!important}
+.quick-grid.grouped-home .quick-link:nth-child(4) .quick-emoji{background:#f1e9ff!important;color:#9264c3!important}
+.quick-grid.grouped-home .quick-emoji svg{width:30px;height:30px;stroke-width:2.3}
+.card{background:#fff;border:1px solid #f0f2f1;border-radius:23px;padding:18px;box-shadow:0 3px 14px #153e3810}
+.card h3{font-weight:900;letter-spacing:-.65px}
+.card.place{gap:13px}
+.place .body h3{font-weight:900;font-size:16px}
+.place .body .muted{font-size:12px}
+.place-photo img,.place-photo-placeholder{border-radius:18px}
+.btn{border-radius:13px;min-height:42px;font-weight:850;letter-spacing:-.2px}
+.btn:not(.secondary):not(.danger){background:#0d9b8c}
+.btn.secondary{background:#e9f8f3;color:#0c776d}
+.tabs{gap:8px}
+.tabs button{border-radius:999px;background:#fff;font-weight:800;border-color:#e5eeeb}
+.tabs button.on{background:#0a9b8d;border-color:#0a9b8d}
+.tag{background:#e5faf3;color:#0c796f;font-weight:800}
+.bottom-nav{background:#fff;border-top:1px solid #e9f0ed;box-shadow:0 -6px 22px #0d392d12}
+.bottom-nav button{font-size:10px;font-weight:850}
+.bottom-nav button .bn-icon{width:47px;height:33px;border-radius:13px}
+.bottom-nav button.active .bn-icon{background:#d8f9ef}
+.bottom-nav button.active{color:#078a7e}
+#groupSubmenu{background:#fff;border-radius:0 0 22px 22px;box-shadow:0 8px 18px #0e3c3212;padding:13px!important}
+#groupSubmenu .group-submenu-title{font-weight:900}
+#groupSubmenu .group-submenu-grid button{border-radius:14px!important;font-weight:850!important;background:#f1faf7!important;color:#165c55!important}
+#modal .sheet{border-radius:30px 30px 0 0}
+#modal .sheet h2{font-weight:900}
+@media(max-width:390px){.quick-grid.grouped-home{gap:6px}.quick-grid.grouped-home .quick-link{font-size:11px;min-height:108px}.quick-grid.grouped-home .quick-emoji{width:51px;height:51px}}
 </style></head><body><div class="wrap"><header><div class="app-eyebrow" style="font-size:12px">OUR HONEYMOON · BALI</div><h1>🌴 우리 둘의 발리</h1><p>마카카 바이 오볼로 2박 · 물리아 풀빌라 3박</p><p>✈️ 에어부산 BX569 · 12/11 발리 22:45 도착 · BX570 · 12/17 김해 08:00 도착</p><span style="font-size:10px;opacity:.8;margin-top:7px">발리 여행 풍경</span></header><nav id="nav" aria-label="큰 메뉴"><button class="active" data-group="home" onclick="tab('home')">🏠 홈</button><button data-group="plan" onclick="toggleMainGroup('plan')">🧳 여행계획 ▾</button><button data-group="explore" onclick="toggleMainGroup('explore')">📍 장소탐색 ▾</button><button data-group="local" onclick="toggleMainGroup('local')">💬 현지생활 ▾</button><button data-group="records" onclick="toggleMainGroup('records')">📒 여행기록 ▾</button></nav><div id="groupSubmenu" class="group-submenu" hidden aria-label="세부 메뉴"></div>
 <section class="panel active" id="home"><div class="home-feature"><p>🌺 신혼여행을 더 편하게</p><strong>발리에서 뭐 할까?<br>원하는 메뉴를 바로 찾아봐!</strong><button class="btn" onclick="tab('places')">📍 인기 장소 찾아보기 →</button><span class="photo-credit">발리 여행지</span></div><div class="section-heading">어디로 갈까요?</div><div class="quick-grid grouped-home" aria-label="큰 카테고리"><button class="quick-link" onclick="toggleMainGroup('plan')"><span class="quick-emoji"><svg class="app-line-icon" viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="7" width="16" height="14" rx="3"/><path d="M9 7V5a3 3 0 0 1 6 0v2M4 13h16M9 13v3m6-3v3"/></svg></span>여행계획</button><button class="quick-link" onclick="toggleMainGroup('explore')"><span class="quick-emoji"><svg class="app-line-icon" viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>장소탐색</button><button class="quick-link" onclick="toggleMainGroup('local')"><span class="quick-emoji"><svg class="app-line-icon" viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-4 3v-7a7.5 7.5 0 1 1 17-3.5Z"/><path d="M8 10h8M8 14h5"/></svg></span>현지생활</button><button class="quick-link" onclick="toggleMainGroup('records')"><span class="quick-emoji"><svg class="app-line-icon" viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="15" height="18" rx="2"/><path d="M9 3v18M12 8h5M12 12h5M12 16h3"/></svg></span>여행기록</button></div><p class="muted" style="margin:0 2px 18px">카테고리를 누르면 세부 메뉴가 나타나요.</p><div class="section-heading">우리 여행 정보</div><div class="card"><h3>✈️ 항공권·탑승객 정보</h3><p><b>신랑:</b> SHIN/JANGHO MR<br><b>신부:</b> HA/JIHYE MS</p><p><b>출국:</b> 2026.12.11(금) 김해 16:40 → 발리 22:45 · BX569</p><p><b>귀국:</b> 2026.12.17(목) 발리 00:05 → 김해 08:00 · BX570</p><p class="notice">항공권 기준 정보입니다. 여권번호·생년월일·여권 만료일은 항공권에 없어 입력하지 않았습니다. 탑승 전 여권 영문명과 대조하세요. 공개 사이트에 여권번호를 저장하지 마세요.</p></div><div class="card home-intro"><h3>💞 우리 여행 한눈에</h3><p>첫날 늦은 도착 후, 2일 차는 늦잠·로컬 쇼핑·대형 쇼핑몰·마사지로 가볍게!</p><span class="tag">2일 차 쇼핑 집중</span><span class="tag">3일 차 숙소 이동</span><span class="tag">4~5일 차 풀빌라 휴식</span></div><div class="card"><h3>🏨 숙소</h3><p><b>1~2박 · MAMAKA by Ovolo (마카카 바이 오볼로)</b></p><p>📍 Jl. Pantai Kuta No.32, Legian, Kuta, Kabupaten Badung, Bali 80361, Indonesia</p><p>☎️ +62 361 8496 500</p><button class="btn secondary" onclick="openSearch('MAMAKA by Ovolo Jl. Pantai Kuta No.32 Bali')">📍 마카카 호텔 지도·길찾기</button><p><b>3~5박</b> 물리아 풀빌라 / The Mulia Villas, Nusa Dua</p><button class="btn secondary" onclick="openSearch('The Mulia Villas Nusa Dua Bali')">물리아 지도 열기</button></div><div class="card"><h3>⭐ 오늘의 추천</h3><p>2일 차: 크리스나 → 점심 → 꾸따 아트마켓 → 비치워크 → 마사지 → 저녁</p><button class="btn" onclick="tab('days');chooseDay(2)">2일 차 일정 보기</button></div><div class="card"><h3>📲 설치 안내</h3><p class="muted">HTTPS 사이트로 배포한 뒤 삼성 인터넷/Chrome 메뉴에서 '홈 화면에 추가' 또는 '앱 설치'를 선택하세요.</p></div></section>
 <section class="panel" id="map"><div class="card"><h3>📍 발리 장소 지도</h3><label for="mapRegionSelect">📍 지도 지역 선택</label><select id="mapRegionSelect" onchange="setMapRegion(this.value)"></select><div class="tabs" id="mapFilters"></div><div id="map"></div><p class="notice">지도를 표시하려면 인터넷 연결이 필요해요. 장소 핀을 꾹 누르거나 팝업의 ‘🏨 숙소에서 이동’을 누르면 숙소별 거리와 교통 경로를 확인할 수 있어요. 마카카 바이 오볼로는 꾸따 해변 Jl. Pantai Kuta No.32에 있어요. 숙소 필터에서 호텔 위치를 확인하고 길찾기를 이용하세요.</p></div></section>
@@ -407,5 +453,5 @@ let selectedPhotoInput='photoInput';function photoSelected(id){selectedPhotoInpu
 let photoUrls=[];async function renderPhotos(){const grid=document.getElementById('photoGrid');try{const items=(await photoRequest((await photoStore('readonly')).getAll())).reverse();photoUrls.forEach(u=>URL.revokeObjectURL(u));photoUrls=[];grid.innerHTML='';if(!items.length){grid.innerHTML='<div class="card">아직 사진이 없어요. 첫 여행 사진을 추가해 보세요!</div>';return}for(const item of items){const url=URL.createObjectURL(item.blob);photoUrls.push(url);const card=document.createElement('div');card.className='card';const img=document.createElement('img');img.src=url;img.alt='여행 사진';img.onclick=()=>window.open(url,'_blank');const p=document.createElement('p');p.className='muted';p.textContent=(item.note||'우리 여행')+' · '+item.date;const del=document.createElement('button');del.className='btn small danger';del.textContent='삭제';del.onclick=()=>deletePhoto(item.id);card.append(img,p,del);grid.append(card)}}catch(e){grid.textContent='갤러리를 불러올 수 없어요.'}}
 async function deletePhoto(id){if(!confirm('이 사진을 앱에서 삭제할까요?'))return;await photoRequest((await photoStore('readwrite')).delete(id));renderPhotos()}
 function restoreTheme(){document.documentElement.dataset.theme='ocean';try{localStorage.setItem('bali-visual-theme','ocean')}catch(e){}}
-restoreTheme();renderDays();renderPlaces();renderBudget();renderMapFilters();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js?v=28',{updateViaCache:'none'}).then(r=>r.update()).catch(()=>{});
+restoreTheme();renderDays();renderPlaces();renderBudget();renderMapFilters();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js?v=29',{updateViaCache:'none'}).then(r=>r.update()).catch(()=>{});
 </script></body></html>
