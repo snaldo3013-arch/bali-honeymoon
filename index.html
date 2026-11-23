@@ -283,7 +283,7 @@ const tripDates=Array.from({length:7},(_,i)=>'2026-12-'+String(11+i).padStart(2,
 const expenseCategories=['식비','교통','마사지','쇼핑','관광','숙소','기타'];
 function baliToday(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Makassar',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
 function defaultExpenseDate(){const today=baliToday();return tripDates.includes(today)?today:'2026-12-11'}
-function normalizeExpenseDate(v){const raw=String(v||'').trim();let m=raw.match(/^(\\d{4})-(\\d{1,2})-(\\d{1,2})$/);if(!m)m=raw.match(/^(\\d{4})\\.\\s*(\\d{1,2})\\.\\s*(\\d{1,2})\\.?$/);if(!m)return '';const d=m[1]+'-'+m[2].padStart(2,'0')+'-'+m[3].padStart(2,'0');const parsed=new Date(d+'T00:00:00Z');return !Number.isNaN(parsed.getTime())&&parsed.toISOString().slice(0,10)===d?d:''}
+function normalizeExpenseDate(v){const raw=String(v||'').trim();let m=raw.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);if(!m)m=raw.match(/^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.?$/);if(!m)return '';const d=m[1]+'-'+m[2].padStart(2,'0')+'-'+m[3].padStart(2,'0');const parsed=new Date(d+'T00:00:00Z');return !Number.isNaN(parsed.getTime())&&parsed.toISOString().slice(0,10)===d?d:''}
 function budgetRate(){const r=Number(localStorage.getItem('bali_budget_krw_rate'));return Number.isFinite(r)&&r>0&&r<100? r:0}
 function budgetWon(amount){const r=budgetRate();return r?'약 '+fmt(Math.round(amount*r))+'원':'환율 미입력'}
 function setBudgetRate(v){const r=Number(v);if(!Number.isFinite(r)||r<=0||r>=100){localStorage.removeItem('bali_budget_krw_rate')}else localStorage.setItem('bali_budget_krw_rate',String(r));renderBudget()}
