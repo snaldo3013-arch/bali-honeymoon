@@ -1,0 +1,10 @@
+// Paste ONLY this match block inside the existing
+// service cloud.firestore { match /databases/{database}/documents { ... } }
+// Keep all other app rules unchanged. Do not add a broad wildcard allow.
+match /baliTrips/honeymoon2026 {
+  allow read, write: if request.auth != null &&
+    request.auth.uid in [
+      'Qlayd2XD7ieNFXX1UOHHobCIq4S2',
+      'zQ4PozjotvUVYz55wKWScGrD0vz1'
+    ];
+}
