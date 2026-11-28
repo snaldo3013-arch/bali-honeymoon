@@ -1,4 +1,4 @@
-const CACHE='bali-honeymoon-v55';
+const CACHE='bali-honeymoon-v56';
 const CORE=['./','./index.html','./manifest.webmanifest','./icon.svg','./couple-sync.js'];
 const MAP_LIBS=['https://unpkg.com/leaflet@1.9.4/dist/leaflet.css','https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'];
 self.addEventListener('install',event=>{event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(CORE);await Promise.allSettled(MAP_LIBS.map(async url=>{const response=await fetch(url,{mode:'cors'});if(response.ok)await cache.put(url,response)}))})());self.skipWaiting()});
